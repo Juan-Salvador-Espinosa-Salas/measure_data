@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/biggernumber.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Bigger number</title>
+</head>
+<body>
+    <section class="numbers">
+        <div class="inputSet">
+            <div>
+                <h3 class="tagName">select 3 numbers</h1>
+                <br> <label for="one">Type the 1st number:</label>
+                <br> <input type="number" id="one" class="inputStyles">
+            </div>
+            <div>
+                <br> <label for="two">Type the 2nd number:</label>
+                <br> <input type="number" id="two" class="inputStyles">
+            </div>
+            <div>
+            <br> <label for="three">Type the 3rd number:</label>
+            <br><input type="number" id="three" class="inputStyles">
+            </div>
+        </div>
+        <button type="submit" id="select" class="selectNumbers">
+            SELECT
+        </button>
+        <div class="resultNumbers">
+            <p id="displayText">the bigger number is:</p>
+            <p id="displayMultiply">the product is:</p>
+            <p id="displaySum">the sum is:</p>
+        </div>
+    </section>
+    <section class="temperatures">
+        <div>
+            <br> <label for="one">Type temperature in Celsius:</label><br>
+            <br> <input type="number" id="celsius"> °Celsius
+        </div>
+        <input type="number" id="fahrenheit" disabled> °Fahrenheit
+        <br> <input type="number" id="kelvin" disabled> °Kelvin
+        <br><br> <button class="convertbtn" id="tempbtnconvert">
+            convert
+        </button>
+
+    </section>
+    <section>
+        <div class="rainforest">
+        </div>
+        <div class="bluesky">
+        </div>
+        <div class="car">
+            <img src="../images/1534835841_about-sedan-car.png" alt="sedan">
+        <div class="wheel">
+            <img src="../images/car-wheel.png" alt="sedan-wheel" class="front">
+            <img src="../images/car-wheel.png" alt="sedan-wheel" class="back">
+        </div>
+        <div class="container">
+            <div>
+            Calculate: <br> <select id="measure" class="dropdown">
+                <option value="SpeedOption">Speed</option>
+                <option value="DistanceOption">Distance</option>
+                <option value="TimeOption">Time</option>
+            </select>
+            <button id="go" class="go">GO</button>
+            </div>
+            <div></div>
+            Speed (Km/h): <input type="number" id="speed" class="info">
+            Distance (Km): <input type="number" id="distance" class="info">
+            Time (h): <input type="number" id="time" class="info">
+            <button class="submit" id="submit">
+                submit
+            </button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="../JS/biggernumber.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</html>

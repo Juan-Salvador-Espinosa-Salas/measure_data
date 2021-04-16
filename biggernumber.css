@@ -1,0 +1,189 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%
+}
+
+.numbers{
+    position: relative;
+    background-color: lightblue;
+    padding: 15px;
+}
+
+.inputStyles{
+    border: none;
+    border-radius: 3px;
+    width: 230px;
+    padding-left: 4px;
+}
+
+.tagName{
+    text-align: center;
+}
+
+.inputSet{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 10px;
+    width: 250px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.selectNumbers{
+    position: relative;
+    top: 5px;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 29px;
+    text-align: center;
+}
+
+.resultNumbers{
+    position: relative;
+    top: 6px;
+}
+
+.convertbtn{
+    position: relative;
+    top: -15px;
+    width: 165px;
+}
+
+.temperatures{
+    position: absolute;
+    left: 450px;
+    top: 280px;
+}
+
+.bluesky{
+    height: 270px;
+    width: 100%;
+    position: absolute;
+    top: 25px;
+    left: 40%;
+    background-image: url(../measure-data/img/bluesky.jpg);
+    padding-left: 10px;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+.rainforest{
+    height: 270px;
+    width: 33.5%;
+    left: 40%;
+    position: absolute;
+    top: 25px;
+    background-image: url(../measure-data/img/rainforest.png);
+    background-size:1000px;
+    background-repeat: repeat;
+    z-index: 1;
+    color: rgb(39, 39, 39);
+}
+
+.go{
+    top: 50%;
+    height: 8px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: skyblue;
+}
+
+.car{
+    width: 200px;
+    left: 60%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 220px;
+    z-index: 2;
+}
+
+.car img{
+    width: 100%;
+    animation: car 3s linear infinite;
+}
+
+
+.container{
+    display: flex;
+    position: absolute;
+    background-color: rgb(24, 24, 26);
+    padding: 10px;
+    left: 220px;
+    top: -140px;
+    flex-direction: column;
+    height: 402%;
+    width: 135%;
+    color: aliceblue;
+    box-shadow: 5px 5px 4px gray;
+    z-index: 8;
+}
+
+.dropdown{
+    width: 45%;
+    background-color: rgb(141, 218, 248);
+}
+
+.submit{
+    position: relative;
+    top: 5px;
+    border-radius: 5px;
+    background-color: skyblue;
+    cursor: pointer;
+}
+
+.wheel{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 35px;
+    z-index: 9;
+}
+
+.wheel img{
+    width: 30px;
+    height: 30px;
+    animation: wheel 2.5s linear infinite;
+}
+
+.front{
+    left: -82px;
+    position: absolute;
+}
+
+.back{
+    left: 41px;
+    position: absolute;
+}
+
+@keyframes car
+{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
